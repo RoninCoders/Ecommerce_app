@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY src .
 
-RUN go run .
+CMD [ "go","run", "."] 
