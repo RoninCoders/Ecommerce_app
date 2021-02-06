@@ -14,7 +14,7 @@ services:
     volumes: 
       - ./scripts/postgres:/docker-entrypoint-initdb.d/
       - ./datadir:/var/lib/postgresql/data
-  backend:
+  go_app:
     build: .
     ports:
       - "8080:8080"
